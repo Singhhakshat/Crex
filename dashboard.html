@@ -17,17 +17,14 @@
     <div id="menu">
         <button id="btn1"><img src="media/iconmonstr-x-mark-thin-240.png" alt="menu" style="width: 25px; margin-left:15px;"/></button>
         <div id="menucontainer">
-          <p><a href="login.html">Your Profile</a></p>
+          <p><a href="profile.html">Your Profile</a></p>
           <hr>
-          <p><a href="addictiontst.html">Addiction Test</a></p>
+          <p><a href="dashboard.html">Dashboard</a></p>
           <hr>
           <p><a href="stats.html">Global Statistics</a></p>
           <hr>
-          <p><a href="knowledge.html">Managing Addiction</a></p>
+          <p><a href="govyojna.html">Government Yojna</a></p>
           <hr>
-          <p><a href="message.html">Messages from Real life fighters</a></p>
-          <hr>
-          <p><a href="frm.html">Become a volunteer / Need Volunteers</a></p>
         </div>
       </div>
 
@@ -40,20 +37,98 @@
                 <p class="amtdet" style="font-size: 1.5em;">For 24 months at 7.5%p.a</p>
             </div>
         </div> -->
-        <div id="amount">
+        <!-- <div id="amount">
             <p class="amtdet">₹75000</p>
-        </div>
+        </div> -->
         <div id="data">
             <div id="dl" class="box2">
-
+              <h2 class="tpp">Requests</h2>
+              <p style="margin-top: 60px;"><span>Sanjay Mishra</span></p>
+              <hr>
+              <p> <span style="font-weight: 600;">Piyush Sharma</span><span> </span></p>
+              <hr>
+              <p> <span>Neha Tomar</span></p>
+              <hr>
+              <p><span>Raju Shastri</span></p>
+              <hr>
+              <p>Neeraj Pandit</p>
+              <hr>
+              <p>Neelu Srivastava</p>
+              <hr>
+              <p>Suraj Shukla</p>
             </div>
             <div id="dr" class="box2">
-
+              <h2 class="tpp">Active Transactions</h2>
+              <p style="margin-top: 60px;">Agrim Chauhans</p>
+              <hr>
+              <p>Abhinav Saxena</p>
+              <hr>
+              <p>Ambuj Kulsheshta</p>
+              <hr>
+              <p>Jyoti Ojha</p>
             </div>
         </div>
       </div>
+      <div id="request">
+        <button id="requbtn">Request</button>
+      </div>
+      <div id="requestmoney">
+        <button id="closerequ"><img src="media/iconmonstr-x-mark-thin-240.png" alt="close request popup"></button>
+        <form action="#">
+          <!-- <input type="text" name="name" id="name" placeholder="Enter Name"> -->
+          <input type="number" name="reqamount" id="reqamount" placeholder="Enter the required amount" required>
+          <button id="conf">Confirm!</button>
+        </form>
+      </div>
 
       <script>
+
+
+        const btnn = document.getElementById("requbtn");
+        btnn.onclick = function () {
+          const a = document.getElementById("requestmoney");
+          if (a.style.display == "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          console.log("CLICKED!");
+        };
+        const btnnn = document.getElementById("closerequ");
+        btnnn.onclick = function () {
+          const a = document.getElementById("requestmoney");
+          if (a.style.display == "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          console.log("CLICKED!");
+        };
+
+
+
+
+        // const reqbtn=document.getElementById("requbtn");
+        // reqbtn.onClick = function (){
+        //   const m=document.getElementById("requestmoney");
+        //   if (m.style.display == "none") {
+        //     m.style.display = "block";
+        //   } else {
+        //     m.style.display = "none";
+        //   }
+        //   console.log("CLICKED!");
+        // };
+        // const reqclose=document.getElementById("closerequ");
+        // reqclose.onClick = function(){
+        //   const n=document.getElementById("requestmoney");
+        //   if(n.style.display== "block"){
+        //     n.style.display="none";
+        //     console.log("clicked");
+        //   }
+        // };
+
+
+
         const btn = document.getElementById("btn");
         btn.onclick = function () {
           const a = document.getElementById("menu");
