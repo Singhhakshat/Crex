@@ -10,7 +10,6 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: -20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -223,7 +222,7 @@ input{
     }
     .left, .right{
         min-width: 100%;
-        min-height: 100px;
+        /* min-height: 100px; */
     }
     .rightest{
         z-index: -100;

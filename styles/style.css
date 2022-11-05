@@ -113,10 +113,47 @@ nav h2{
 }
     /* The first media component here can be removed in case of any error */
 
-@media screen and (min-width: 449px){
+@media screen and (min-width: 375px){
+    .home h3{
+        top: 58%;
+        font-size: 25px;
+    }
+    #joinbutton{
+        top: 70%;
+        left: 15%;
+        padding: 15px;
+        font-size: 20px;
+        width: 70vw;
+    }
+    
+    .home h2{
+        font-size: 20px;
+        top: 82%;
+        left: 28%;
+    }
+}
+
+@media screen and (min-width: 425px){
     video{
         width: 350% !important;
         margin-left: -600px !important;
+    }
+    .home h3{
+        top: 59%;
+        font-size: 25px;
+    }
+    #joinbutton{
+        top: 70%;
+        left: 15%;
+        padding: 15px;
+        font-size: 20px;
+        width: 70vw;
+    }
+    
+    .home h2{
+        font-size: 20px;
+        top: 82%;
+        left: 30%;
     }
 } 
 
@@ -129,11 +166,11 @@ nav h2{
         font-size: 100px;
     }
     .home h3{
-        top: 57%;
+        top: 67%;
         font-size: 30px;
     }
     #joinbutton{
-        top: 64%;
+        top: 79%;
         left: 15%;
         padding: 15px;
         font-size: 25px;
@@ -142,7 +179,7 @@ nav h2{
     
     .home h2{
         font-size: 25px;
-        top: 72%;
+        top: 88%;
         left: 35%;
     }
 } 
