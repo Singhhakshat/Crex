@@ -43,39 +43,59 @@
         <div id="data">
             <div id="dl" class="box2">
               <h2 class="tpp">Requests</h2>
-              <p style="margin-top: 60px;"><span>Sanjay Mishra</span></p>
+              <!-- <p style="margin-top: 60px;"><span style="font-weight: 600;">Sanjay Mishra</span></p>
+              <hr> -->
+              <div class="list" style="margin-top: 70px;">
+                <p>Shyam Gupta</p>
+                <p>25000</p>
+                <p>3%</p>
+                <p>12months</p>
+                <p><button id="accept">Accept</button></p>
+              </div>
               <hr>
-              <p> <span style="font-weight: 600;">Piyush Sharma</span><span> </span></p>
+              <!-- <p> <span style="font-weight: 600;">Neha Tomar</span></p>
               <hr>
-              <p> <span>Neha Tomar</span></p>
+              <p><span style="font-weight: 600;">Raju Shastri</span></p>
               <hr>
-              <p><span>Raju Shastri</span></p>
+              <p style="font-weight: 600;">Neeraj Pandit</p>
               <hr>
-              <p>Neeraj Pandit</p>
+              <p style="font-weight: 600;">Neelu Srivastava</p>
               <hr>
-              <p>Neelu Srivastava</p>
-              <hr>
-              <p>Suraj Shukla</p>
+              <p style="font-weight: 600;">Suraj Shukla</p> -->
             </div>
             <div id="dr" class="box2">
-              <h2 class="tpp">Active Transactions</h2>
-              <p style="margin-top: 60px;">Agrim Chauhans</p>
+              <h2 class="tpp">Lendings</h2>
+              <div class="list" style="margin-top: 70px;">
+                <p>Shyam Gupta</p>
+                <p>25000</p>
+                <p>3%</p>
+                <p>12months</p>
+              </div>
               <hr>
-              <p>Abhinav Saxena</p>
+              <!-- <p style="margin-top: 60px; font-weight: 600;">Agrim Chauhans</p>
               <hr>
-              <p>Ambuj Kulsheshta</p>
+              <p style="font-weight: 600;">Abhinav Saxena</p>
               <hr>
-              <p>Jyoti Ojha</p>
-            </div>
+              <p style="font-weight: 600;">Ambuj Kulsheshta</p>
+              <hr>
+              <p style="font-weight: 600;">Jyoti Ojha</p>
+            </div> -->
         </div>
       </div>
+      <div id="acceptpopup">
+        <button id="closeacc"><img src="media/iconmonstr-x-mark-thin-240.png" alt="close request popup"></button>
+        <p>Are you sure you want to Approve this request?</p>
+        <button id="yess" onclick="window.location.href = 'req_cnf.html';">Yes</button>
+      </div>
+
       <div id="request">
         <button id="requbtn">Request</button>
       </div>
       <div id="requestmoney">
         <button id="closerequ"><img src="media/iconmonstr-x-mark-thin-240.png" alt="close request popup"></button>
         <form action="#">
-          <!-- <input type="text" name="name" id="name" placeholder="Enter Name"> -->
+          <input type="text" name="name" id="name" placeholder="Enter Your name" required>
+          <input type="number" name="aadhaar" id="aadhaar" placeholder="Enter Aadhaarnumber" required>
           <input type="number" name="reqamount" id="reqamount" placeholder="Enter the required amount" required>
           <button id="conf">Confirm!</button>
         </form>
@@ -104,7 +124,28 @@
           }
           console.log("CLICKED!");
         };
-
+        
+        
+        const btnnm = document.getElementById("accept");
+        btnnm.onclick = function () {
+          const a = document.getElementById("acceptpopup");
+          if (a.style.display == "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          console.log("CLICKED!");
+        };
+        const btnnmm = document.getElementById("closeacc");
+        btnnmm.onclick = function () {
+          const a = document.getElementById("acceptpopup");
+          if (a.style.display == "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          console.log("CLICKED!");
+        };
 
 
 
